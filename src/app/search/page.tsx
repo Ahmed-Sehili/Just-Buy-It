@@ -1,4 +1,22 @@
 "use client";
+import { Suspense } from "react";
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<SearchLoading />}>
+      <SearchContent />
+    </Suspense>
+  );
+}
+
+function SearchLoading() {
+  return (
+    <div className="container mx-auto py-12">
+      <h1 className="text-2xl font-bold mb-8">Loading...</h1>
+    </div>
+  );
+}
+
 
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
@@ -11,7 +29,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { useCart } from "@/context/CartContext";
 
-export default function SearchPage() {
+function SearchContent() {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") || "";
   const [products, setProducts] = useState<Product[]>([]);
