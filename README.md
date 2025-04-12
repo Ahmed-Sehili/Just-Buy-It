@@ -6,7 +6,6 @@ A modern e-commerce web application built with Next.js, designed to showcase pro
 
 - **Product Listings**: Browse a wide range of products with filters and search functionality.
 - **Shopping Cart**: Add/remove items, adjust quantities, and proceed to checkout.
-- **User Authentication**: Secure login and registration for personalized experiences.
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices.
 - **State Management**: Uses React Context for efficient global state handling.
 
