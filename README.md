@@ -26,7 +26,7 @@ The project is organized as follows:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/just-buy-it.git
+   git clone https://github.com/Ahmed-Sehili/just-buy-it.git
    cd just-buy-it
    ```
 
